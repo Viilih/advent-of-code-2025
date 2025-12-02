@@ -6,7 +6,7 @@ const extractInput = (filePath: string): string => {
 
 const solution = () => {
   let count = 0;
-  const input = extractInput("./input.txt").trim();
+  const input = extractInput("./inpux.txt").trim();
   const ranges = input.split(",");
   const range = ranges.map((r) => r.split("-").map((num) => parseInt(num, 10)));
 
@@ -63,6 +63,7 @@ const solution = () => {
 
     return true;
   };
+  console.log(partTwo());
 };
 
 solution();
